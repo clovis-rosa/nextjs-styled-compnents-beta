@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clr": "rm -rf .next node_modules yarn.lock"
   },
   "dependencies": {
     "next": "^12.3.1",
@@ -16,6 +17,38 @@
   "devDependencies": {
     "@types/node": "18.11.4",
     "@types/react": "18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "eslint-config-next": "^12.3.1",
+    "prettier": "^2.7.1",
     "typescript": "4.8.4"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "semi": false,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxSingleQuote": false,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "useTabs": false
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
